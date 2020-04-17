@@ -1,0 +1,9 @@
+<!-- pages/music/music.wxml -->
+<view>
+  <view class="mymusic" wx:if="{{ismusic}}" catch:tap="musicStop">
+    <i class="iconfont icon-yinfu1"></i>
+  </view>
+  <view class="stopmusic" wx:else catch:tap="musicStart">
+    <i class="iconfont icon-jinzhiyinlebofang"></i>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/go/go",
+    "pages/rap/rap",
+    "pages/sing/sing",
+    "pages/jump/jump",
+    "pages/music/music"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#02b2b5",
+    "navigationBarTitleText": "我不服",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxca1e7ba3fe18ff12"
+  ]
+}

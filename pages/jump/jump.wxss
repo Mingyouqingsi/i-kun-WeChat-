@@ -1,0 +1,13 @@
+/* pages/jump/jump.wxss */
+.jumpmodel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#myVideo {
+  width: 100%;
+}
+#myMap {
+  width: 100%;
+  height: 500rpx;
+}

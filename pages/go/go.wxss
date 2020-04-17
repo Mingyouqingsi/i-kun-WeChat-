@@ -1,0 +1,59 @@
+/* pages/go/go.wxss */
+.cai {
+  width: 100%;
+  height:3000rpx;
+  /* background: yellow; */
+}
+.tabbox {
+  width:100%;
+  height:100rpx;
+  background:rgba(8, 206, 157, 0.103);
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.tabicon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.act {
+  color: #df495b;
+}
+.iconbox{
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.icontext {
+  font-size: 24rpx;
+}
+.jb_box{
+  width: 100%;
+  height: 200rpx;
+  /* background: #000; */
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  /* margin: 0 100rpx; */
+}
+.jb_image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin: 0 80rpx;
+}
+.user_integral {
+  margin: 20rpx 80rpx;
+}
+.integral_box {
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

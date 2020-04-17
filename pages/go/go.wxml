@@ -1,0 +1,35 @@
+<!-- pages/go/go.wxml -->
+<view>
+  <view class="cai" wx:if="{{check === 1}}">
+    <text>我是{{jb.nickName}}</text>
+  </view>
+  <view class="cai_2" wx:if="{{check === 2}}">
+    <text>我是{{jb.nickName}}他爹</text>
+  </view>
+  <view class="cai_3" wx:if="{{check === 3}}">
+    <view>
+      <view class="jb_box">
+        <image class="jb_image" src="{{jb.avatarUrl}}"></image>
+        <text>{{jb.nickName}}</text>
+      </view>
+      <text class="user_integral">可使用积分：200</text>
+    </view>
+    <view class="integral_box">
+      <text>100积分可兑换\n一次游戏机会</text>
+    </view>
+  </view>
+  <view class="tabbox">
+    <view class="iconbox {{check === 1 ? 'act' : ''}}" catch:tap="checkact" data-check='1'>
+      <text class="iconfont icon-ego-box"></text>
+      <text class="icontext">全部</text>
+    </view>
+    <view class="iconbox {{check === 2 ? 'act' : ''}}" bindtap="checkact" data-check='2'>
+      <text class="iconfont icon-webicon03"></text>
+      <text class="icontext">其他</text>
+    </view>
+    <view class="iconbox  {{check === 3 ? 'act' : ''}}" bindtap="checkact" data-check='3'>
+      <text class="iconfont icon-xiaoxi-copy"></text>
+      <text class="icontext">消息</text>
+    </view>
+  </view>
+</view>

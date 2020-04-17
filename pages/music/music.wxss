@@ -1,0 +1,23 @@
+/* pages/music/music.wxss */
+.iconfont{
+    font-size: inherit;
+    font-size: 100rpx;
+}
+.mymusic {
+    width: 100rpx;
+    position: fixed;
+    right: 0;
+    top: 0;
+    animation: myfirst 5s infinite linear;
+}
+.stopmusic {
+    width: 100rpx;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+@keyframes myfirst {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

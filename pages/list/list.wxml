@@ -1,0 +1,54 @@
+<!-- pages/list/list.wxml -->
+<import src="../listTmp/listTmp" />
+<view>
+  <swiper indicator-dots indicator-color='yellow' indicator-active-color='skyblue' circular>
+    <swiper-item bindtap="show">
+      <image src="../../img/swiperimg/1_20190730124037.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../img/swiperimg/2_20190730124016.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../img/swiperimg/3_20190730124029.jpg" />
+    </swiper-item>
+    <swiper-item>
+      <image src="../../img/swiperimg/4_20190730124033.jpg" />
+    </swiper-item>
+  </swiper>
+  <view>
+    <template is="listTmp" />
+  </view>
+  <view class="test-src" hidden="{{flag}}" bindtap="hide">
+    <image src="/img/swiperimg/1_20190730124037.jpg"></image>
+  </view>
+  <view class="equityList">
+    <view class="listTitle {{listCheck === 1 ? 'active' : ''}}" bind:tap="checkList" data-listCheck='1'>
+      颖星人
+    </view>
+    <view class="listTitle {{listCheck === 2 ? 'active' : ''}}" bind:tap="checkList" data-listCheck='2'>
+      颖达人
+    </view>
+    <view class="listTitle {{listCheck === 3 ? 'active' : ''}}" bind:tap="checkList" data-listCheck='3'>
+      颖爱豆
+    </view>
+    <view class="listTitle {{listCheck === 4 ? 'active' : ''}}" bind:tap="checkList" data-listCheck='4'>
+      颖巨星
+    </view>
+    <view class="listTitle {{listCheck === 5 ? 'active' : ''}}" bind:tap="checkList" data-listCheck='5'>
+      NEXT
+    </view>
+  </view>
+  <view>
+    <image class="eqImg" src="../../img/swiperimg/1_20190730124037.jpg" wx:if="{{listCheck === 1}}">
+      <view class="where" catchtap="Go">找个地方坐坐</view>
+      <view class="where iswhere" catchtap="Gomusic">我这有个小音乐</view>
+      <view class="where isthere" catchtap="Govideo">我这有个小视频</view>
+    </image>
+    <image class="eqImg" src="../../img/swiperimg/2_20190730124016.jpg" wx:if="{{listCheck === 2}}">
+      <view class="where" bind:tap="GoDouYu">找个地方看直播</view>
+    </image>
+    <image class="eqImg" src="../../img/swiperimg/3_20190730124029.jpg" wx:if="{{listCheck === 3}}"></image>
+    <image class="eqImg" src="../../img/swiperimg/4_20190730124033.jpg" wx:if="{{listCheck === 4}}"></image>
+    <image class="eqImg" src="../../img/swiperimg/4_20190730124033.jpg" wx:if="{{listCheck === 5}}"></image>
+  </view>
+</view>
